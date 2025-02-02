@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Building</title>
+  <style>
+    html{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:yellow;
+    }
+    body {
+      width:400px;
+      height: 300px;
+      background: #67AED4;
+      position:relative;
+      border: 1px solid black;
+    }
+
+    .a,.b{
+      width:100px;
+      height:168px;
+      background:#fff;
+      position:absolute;
+      left:142px;
+      bottom:0;
+    }
+    .a:after,.a:before{
+      content:"";
+      position:absolute;
+      height:88px;
+      width:60px;
+      background:#0F2836;
+      bottom:0;
+      left:20px;
+      z-index:1;
+    }
+    .a:before{
+      background:#fff;
+      top:-60px;
+    }
+    .b{
+      width:12px;
+      height:96%;
+      left:185px;
+      
+    }
+    .b:after{
+      content:"";
+      position:absolute;
+      width:400px;
+      height:20px;
+      background:#fff;
+      left:-185px;
+      bottom:88px;
+    }
+    .c,.d,.e,.f{
+      position:absolute;
+      width:20px;
+      height:100px;
+      background:white;
+      display:flex;
+      align-items:end;
+      bottom:0;
+    }
+    .c{
+      left:22px
+    }
+    .d{
+      left:82px;
+    }
+    .e{
+      left:282px;
+    }
+    .f{
+      right:38px;
+    }
+  </style>
+</head>
+<body>
+  <div class='a'></div>
+  <div class='b'></div>
+  <div class='c'></div>
+  <div class='d'></div>
+  <div class='e'></div>
+  <div class='f'></div>
+</body>
+</html>
+
